@@ -39,7 +39,7 @@ Github地址:https://github.com/weiyeying/wyymain
 
 
 
-五、安装方法
+四、安装方法
 ----
 
 获取安装
@@ -80,7 +80,7 @@ CheckTime=5  //检测间隔时间（秒）
 ```
 
 
-六、联系我
+五、联系我
 ----
 wx号:qq448520051
 

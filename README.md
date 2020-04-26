@@ -25,7 +25,7 @@ Github地址:https://github.com/weiyeying/wyymain
 
 - 1、开箱即用简便的命令行操作
 - 2、定时监控mysql nginx php 服务可用性 
-- 3、自动重启功能 服务不可用自动重启启动
+- 3、自动重启功能 监测服务不可用自动重启
 - 4、新增消息通知功能 支持企业微信消息推送
 
 
@@ -66,7 +66,7 @@ Wxurl = https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=d4f81470
 WxPhone="13311526560"
 
 
-# 数据库配置
+# 配置文件
 ServerName="nginx"  //服务名称
 IsOpen = true       //是否开启服务
 IsSendMsg=true

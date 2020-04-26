@@ -1,4 +1,4 @@
-wyymain服务管理系统
+wyymain服务（php+mysql+nginx）管理
 ====
 
 
@@ -42,9 +42,11 @@ Github地址:https://github.com/weiyeying/wyymain
 五、安装方法
 ----
 
-方法一、 编译安装
+获取安装
 
 - go get github.com/weiyeying/wyymain
+- go get github.com/go-sql-driver/mysql
+
 - 修改config 配置文件
 - 启动服务 go run wyymain.go start &
 - 停止服务 go run wyymain.go stop

@@ -92,5 +92,5 @@ wx号:qq448520051
 
 六、效果
 
-![image](https://github.com/weiyeying/wyymain/master/data/wx.png?raw=true "github")
+![image](http://www.weiyeying.cn/wx.png "github")
 

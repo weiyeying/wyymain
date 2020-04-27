@@ -34,12 +34,14 @@ func checkmysql(c config.MysqlCheck) {
 		db, _ := sql.Open("mysql", c.Url)
 		err := db.Ping()
 		if err != nil {
+			libs.LogInfo("mysql检测故障:"+err.Error())
 			if c.IsFailedReload{
 					killmysql(c)
 					startmysql(c)
+				libs.LogInfo("已重新启动mysql")
 			}
 			if c.IsSendMsg{
-				libs.SendWx("mysql连接服务异常已重新启动")
+				libs.SendWx("mysql连接服务异常已重新启动"+err.Error())
 			}
 
 		}

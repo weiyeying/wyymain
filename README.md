@@ -49,7 +49,10 @@ Github地址:https://github.com/weiyeying/wyymain
 
 - 修改config 配置文件
 - 启动服务 go run wyymain.go start &
+- 后台运行 nohup go run wyymain.go start &
 - 停止服务 go run wyymain.go stop
+   
+
 
 
 
@@ -87,7 +90,7 @@ wx号:qq448520051
 欢迎交流，欢迎提交代码。
 
 
+六、效果
 
-
-
+![image](https://github.com/weiyeying/wyymain/master/data/wx.png?raw=true "github")
 

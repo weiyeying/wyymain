@@ -6,6 +6,7 @@ import (
 	"wyy/libs"
 	"wyy/wyy/works/mysql"
 	"wyy/wyy/works/nginx"
+	"wyy/wyy/works/php"
 )
 
 func Run() {
@@ -32,6 +33,7 @@ func Run() {
 func Registered()  {
 	go nginx.Run() //注册nginx检测
 	go mysql.Run() //注册mysql检测
+    go php.Run()   //注册php检测
 
 }
 

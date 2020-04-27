@@ -1,6 +1,7 @@
 package libs
 
 import (
+	"fmt"
 	"os/exec"
 	"runtime"
 	"strings"
@@ -55,9 +56,10 @@ func runInWindows(cmd string) (string, error) {
 }
 
 func runInLinux(cmd string) (string, error) {
-	//fmt.Println("Running Linux cmd:" + cmd)
+	fmt.Println("Running Linux cmd:" + cmd)
 	result, err := exec.Command("/bin/sh", "-c", cmd).Output()
 	if err != nil {
+		fmt.Println(err.Error())
 		return "", err
 	}
 	return strings.TrimSpace(string(result)), err

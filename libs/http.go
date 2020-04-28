@@ -26,16 +26,15 @@ func Get(url string) bool {
 // 发送GET请求
 // url：         请求地址
 // response：    请求返回的内容
-func GetData(url string)(http.Response)  {
-
+func GetData(url string)(int,string)  {
 	// 超时时间：5秒
 	client := &http.Client{Timeout:5 * time.Second}
 	con, err := client.Get(url)
+	//fmt.Println(err)
 	if err != nil {
-		return *con
+		return 0,""
 	}
-
-	return *con
+	return con.StatusCode,con.Status
 
 }
 

@@ -45,6 +45,7 @@ func checkmysql(c config.MysqlCheck) {
 			}
 
 		}
+		db.Close()
 		time.Sleep(d)
 	}
 
